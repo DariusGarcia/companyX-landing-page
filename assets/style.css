@@ -11,7 +11,6 @@ body {
 
 header {
     display: fixed;
-    top: 0;
 }
 
 .navbar {
@@ -32,7 +31,7 @@ header {
 
 .navbar-container {
     background-color: black;
-    padding: 1rem;
+    /* padding: 1rem; */
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -72,7 +71,9 @@ span {
 }
 
 img {
+    display: block;
     border-radius: 5px;
+    height: 20rem;
 }
 
 .name-container {
@@ -86,7 +87,7 @@ img {
 }
 
 #header-text {
-    width: 30%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,8 +101,8 @@ img {
     align-items: center;
     background-color: grey;
     padding: 2rem;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin-right: 2rem;
+    margin-left: 2em;
     border-radius: 5px;
     height: 20rem;
     gap: 2rem;
@@ -119,10 +120,17 @@ img {
     color: white;
     border: none;
     margin-bottom: 2rem;
+    cursor: pointer;
+
 }
 
 .submit-btn:hover {
     opacity: 75%;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 75ms;
+    transform: scale(.90);
+
+
 }
 
 input {
@@ -138,6 +146,16 @@ input {
     align-items: center;
     justify-content: center;
     bottom: 0;
-    padding: 5rem;
+    padding: 2.5rem;
     border-top: 1px solid grey;
+}
+
+#footer-name {
+    margin-top: 1rem;
+}
+
+@media (min-width: 1200px) {
+    #header-text {
+        width: 30%;
+    }
 }
